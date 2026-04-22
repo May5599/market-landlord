@@ -78,12 +78,9 @@ export default function AdvantageTabs() {
 
         {/* Skyline */}
       <div className="relative -mb-12">
-  <img
-    src="/skyline.png"
-    alt="Canadian Skyline"
-    className="mx-auto opacity-70"
-  />
-</div>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/skyline.png" alt="Canadian Skyline" className="mx-auto opacity-70" />
+      </div>
       </div>
     </section>
   );

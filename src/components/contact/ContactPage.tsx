@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, CheckCircle2 } from "lucide-react";
+import Image from "next/image";
 
 const inputCls =
   "w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#b9cf36] transition bg-white text-gray-900 placeholder-gray-400";
@@ -52,10 +53,12 @@ export default function ContactPage() {
     <main className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100">
       {/* Hero */}
       <section className="relative h-[55vh] flex items-center justify-center overflow-hidden">
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1920&q=80"
           alt="Property skyline"
-          className="absolute inset-0 w-full h-full object-cover object-center"
+          fill
+          className="object-cover object-center"
+          priority
         />
         <div className="absolute inset-0 bg-[#1A1F73]/80" />
         <motion.div
@@ -64,10 +67,10 @@ export default function ContactPage() {
           transition={{ duration: 0.8 }}
           className="relative z-10 text-center text-white px-6"
         >
-          <h1 className="text-4xl md:text-6xl font-serif font-bold mb-4">Let's Connect</h1>
+          <h1 className="text-4xl md:text-6xl font-serif font-bold mb-4">Let&apos;s Connect</h1>
           <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed">
-            Whether you're a landlord, investor, or franchise prospect — our Ontario team
-            is ready to help. Reach out and let's start the conversation.
+            Whether you&apos;re a landlord, investor, or franchise prospect — our Ontario team
+            is ready to help. Reach out and let&apos;s start the conversation.
           </p>
         </motion.div>
       </section>
@@ -257,8 +260,8 @@ export default function ContactPage() {
             Ready to Grow with MrLandlord.ca?
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-8">
-            Connect with Ontario's trusted property management and franchise experts.
-            Let's turn your investment into long-term success.
+            Connect with Ontario&apos;s trusted property management and franchise experts.
+            Let&apos;s turn your investment into long-term success.
           </p>
           <a
             href="/franchise"

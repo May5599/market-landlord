@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
+import Image from "next/image";
 
 const inputCls =
   "w-full px-4 py-3 rounded-lg border border-gray-200 bg-white text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#b9cf36] transition text-base";
@@ -60,10 +61,12 @@ export default function FranchisePage() {
     <main className="bg-gray-50">
       {/* HERO */}
       <section className="relative min-h-[85vh] flex items-center justify-center text-center overflow-hidden">
-        <img
+        <Image
           src="/contcat.jpg"
           alt="Property skyline"
-          className="absolute inset-0 w-full h-full object-cover object-bottom"
+          fill
+          className="object-cover object-bottom"
+          priority
         />
         <div className="absolute inset-0 bg-gradient-to-br from-[#000000]/40 to-[#1c2980]/70" />
 
@@ -80,7 +83,7 @@ export default function FranchisePage() {
             Start Your <span className="text-[#b9cf36]">MrLandlord.ca</span> Franchise
           </h1>
           <p className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed max-w-2xl mx-auto">
-            Launch your own property management business with Ontario's most trusted brand.
+            Launch your own property management business with Ontario&apos;s most trusted brand.
             Full training, operational support, and a proven system — built for your success.
           </p>
           <a
@@ -283,7 +286,7 @@ export default function FranchisePage() {
       {/* Closing note */}
       <section className="py-16 text-center bg-gray-50 px-6">
         <h3 className="text-2xl md:text-3xl font-serif font-bold text-[#1A1F73] mb-3">
-          We'll be in touch within 2–3 business days
+          We&apos;ll be in touch within 2–3 business days
         </h3>
         <p className="text-gray-500 max-w-xl mx-auto">
           Our Ontario franchise development team will reach out for a confidential conversation

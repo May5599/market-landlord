@@ -38,7 +38,7 @@ export default function StepsToOwnership() {
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Owning a <span className="font-semibold text-[#b9cf36]">MrLandlord.ca</span>{" "}
             franchise is simple. Follow these four clear steps to start your
-            journey in Canada's growing property management industry.
+            journey in Canada&apos;s growing property management industry.
           </p>
         </div>
 

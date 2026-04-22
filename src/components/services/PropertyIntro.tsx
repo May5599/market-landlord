@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function PropertyIntro() {
   return (
@@ -47,12 +48,14 @@ export default function PropertyIntro() {
           viewport={{ once: true }}
           className="flex justify-center md:justify-end"
         >
-          <img
-            src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=900&q=80"
-            alt="Ontario property managers discussing rental portfolio"
-            className="rounded-xl shadow-md w-full max-w-md object-cover"
-            loading="lazy"
-          />
+          <div className="relative w-full max-w-md h-80 rounded-xl shadow-md overflow-hidden">
+            <Image
+              src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=900&q=80"
+              alt="Ontario property managers discussing rental portfolio"
+              fill
+              className="object-cover"
+            />
+          </div>
         </motion.div>
       </div>
     </section>

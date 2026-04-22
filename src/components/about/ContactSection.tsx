@@ -52,7 +52,7 @@ export default function ContactSection() {
           </motion.h2>
           <p className="text-gray-300 max-w-md">
             Have questions about franchising, investing, or property management?
-            We're here to help — reach out today.
+            We&apos;re here to help — reach out today.
           </p>
 
           <div className="space-y-4">
@@ -90,7 +90,7 @@ export default function ContactSection() {
             <div className="flex flex-col items-center justify-center py-10 text-center gap-4">
               <CheckCircle2 className="w-14 h-14 text-[#b9cf36]" />
               <p className="text-lg font-semibold text-[#0a2e73]">Message Received!</p>
-              <p className="text-gray-500 text-sm max-w-xs">We'll be in touch within one business day.</p>
+              <p className="text-gray-500 text-sm max-w-xs">We&apos;ll be in touch within one business day.</p>
               <button onClick={() => setStatus("idle")} className="mt-2 text-sm text-[#0a2e73] underline">Send another</button>
             </div>
           ) : (
